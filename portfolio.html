@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ritika | CSE Student Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b1020;color:#eef2ff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;width:100%;z-index:10;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;background:rgba(11,16,32,.88);backdrop-filter:blur(10px)}
+.logo{font-size:24px;font-weight:800;color:#7dd3fc}
+nav ul{display:flex;gap:25px;list-style:none}
+nav li a:hover{color:#7dd3fc}
+section{padding:95px 9%;min-height:80vh}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at top,#172554,#0b1020 55%)}
+.hero h1{font-size:clamp(45px,8vw,85px);line-height:1.05;margin:15px 0}
+.hero h1 span{color:#7dd3fc}
+.hero p{max-width:650px;margin:auto;color:#b9c2d9;font-size:19px}
+.badge{display:inline-block;border:1px solid #334155;padding:8px 16px;border-radius:30px;color:#7dd3fc}
+.btn{display:inline-block;margin-top:28px;padding:13px 24px;border-radius:10px;background:#7dd3fc;color:#08111f;font-weight:bold}
+.btn:hover{transform:translateY(-2px)}
+.title{text-align:center;margin-bottom:45px;font-size:38px}
+.title span{color:#7dd3fc}
+.about{max-width:850px;margin:auto;text-align:center;color:#c5ccdc;font-size:18px}
+.skills,.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#11182b;border:1px solid #24314d;border-radius:16px;padding:25px;transition:.25s}
+.card:hover{transform:translateY(-6px);border-color:#7dd3fc}
+.card h3{margin-bottom:10px;color:#e0f2fe}
+.card p{color:#aeb8cc}
+.skill{margin:12px 0;padding:12px 15px;background:#17223a;border-radius:10px;color:#dbeafe}
+.contact{text-align:center}
+.contact p{color:#b9c2d9;margin:8px}
+footer{text-align:center;padding:25px;color:#8290aa;border-top:1px solid #1f2937}
+@media(max-width:700px){nav ul{gap:10px;font-size:13px}.logo{font-size:19px}section{padding-left:6%;padding-right:6%}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Ritika.dev</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <div class="badge">B.Tech CSE • Student Developer</div>
+    <h1>Hi, I'm <span>Ritika</span>.</h1>
+    <p>I’m a Computer Science student passionate about building practical software, learning new technologies, and turning ideas into working projects.</p>
+    <a class="btn" href="#projects">View My Work ↓</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="title">About <span>Me</span></h2>
+  <div class="about">
+    <p>I am a B.Tech Computer Science student who enjoys problem solving, programming and web development. I am currently strengthening my foundations in C++, Python, databases and modern web technologies while building hands-on projects.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="title">My <span>Skills</span></h2>
+  <div class="skills">
+    <div class="card"><h3>Programming</h3><div class="skill">C++</div><div class="skill">Python</div><div class="skill">SQL</div></div>
+    <div class="card"><h3>Web Development</h3><div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">JavaScript</div></div>
+    <div class="card"><h3>Core CS</h3><div class="skill">DBMS</div><div class="skill">Data Structures</div><div class="skill">OOP</div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="title">Featured <span>Projects</span></h2>
+  <div class="projects">
+    <div class="card"><h3>KisanDwar</h3><p>AgriLogistics & Mandi Slot Allocation System designed to manage farmers, produce, mandi slots, storage, traders and transactions.</p></div>
+    <div class="card"><h3>Safe Route Navigator</h3><p>A safety-focused route concept using crime data, crowd density, lighting and user reports to recommend safer routes.</p></div>
+    <div class="card"><h3>Team Recruitment Automation</h3><p>A data processing pipeline for importing CSV/JSON registrations, validating and normalizing data, and generating structured team information.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="title">Let's <span>Connect</span></h2>
+  <p>Email: u25cs116@coed.svnit.ac.in</p>
+  <p>GitHub: github.com/Ritika-9257</p>
+  <p>LinkedIn: linkedin.com/in/Ritika Khichar</p>
+  <a class="btn" href="mailto:your.email@example.com">Contact Me</a>
+</section>
+
+<footer>© 2026 Ritika • Built with HTML & CSS</footer>
+</body>
+</html>
